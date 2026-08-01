@@ -251,6 +251,34 @@
       color: var(--texto-suave);
     }
 
+    .alerta-problema {
+      margin-bottom: 24px;
+      padding: 14px 18px;
+      border: 1px solid rgba(242, 108, 79, 0.4);
+      border-radius: 14px;
+      color: #9d2f1f;
+      background-color: #fff1ed;
+      font-weight: bold;
+    }
+
+    #problema .cartao {
+      position: relative;
+      overflow: hidden;
+      border-color: rgba(242, 108, 79, 0.45);
+      border-top: 5px solid #f26c4f;
+      background: linear-gradient(180deg, #fff7f4 0%, #ffffff 42%);
+      box-shadow: 0 18px 40px rgba(148, 48, 29, 0.13);
+    }
+
+    #problema .icone {
+      color: white;
+      background-color: #f26c4f;
+    }
+
+    #problema .cartao h3 {
+      color: #9d2f1f;
+    }
+
     .secao-equipe {
       margin-top: 76px;
       padding: 76px 0;
@@ -642,6 +670,11 @@
             A coleta de evidências em campo ainda depende de
             processos fragmentados, manuais e sujeitos a falhas.
           </p>
+        </div>
+
+        <div class="alerta-problema" role="note">
+          ⚠ Pontos críticos que tornam as vistorias mais lentas,
+          trabalhosas e sujeitas a falhas.
         </div>
 
         <div class="grade-4">
