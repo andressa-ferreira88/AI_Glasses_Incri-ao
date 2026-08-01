@@ -17,16 +17,16 @@
 
   <style>
     :root {
-      --fundo: #e9f2f9;
-      --superficie: #e9f2f9;
-      --texto: #1b325f;
-      --texto-suave: #1b325f;
-      --azul: #3a89c9;
-      --azul-escuro: #1b325f;
-      --ciano: #9cc4e4;
-      --verde: #3a89c9;
-      --borda: #9cc4e4;
-      --sombra: 0 18px 45px rgba(27, 50, 95, 0.12);
+      --fundo: #f5f7fb;
+      --superficie: #ffffff;
+      --texto: #152033;
+      --texto-suave: #5f6b7a;
+      --azul: #1769e0;
+      --azul-escuro: #0b3f91;
+      --ciano: #00a7b5;
+      --verde: #14866d;
+      --borda: #dfe5ee;
+      --sombra: 0 18px 45px rgba(20, 39, 74, 0.10);
       --raio: 22px;
       --largura: 1180px;
     }
@@ -62,7 +62,7 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background-color: rgba(233, 242, 249, 0.95);
+      background-color: rgba(255, 255, 255, 0.95);
       border-bottom: 1px solid var(--borda);
     }
 
@@ -97,8 +97,8 @@
     .hero {
       padding: 92px 0 76px;
       color: white;
-      background: #1b325f;
-      background: linear-gradient(90deg, #1b325f 0%, #3a89c9 55%, #9cc4e4 100%);
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 48, 121, 1) 35%, rgba(0, 255, 229, 1) 100%);
     }
 
     .hero-conteudo {
@@ -140,7 +140,7 @@
     .frase-impacto {
       margin-top: 30px;
       padding-left: 18px;
-      border-left: 4px solid #f26c4f;
+      border-left: 4px solid #63e6ef;
       font-size: 1.16rem;
       font-weight: bold;
     }
@@ -183,7 +183,7 @@
       padding: 5px 12px;
       margin-bottom: 12px;
       border-radius: 999px;
-      background-color: #9cc4e4;
+      background-color: #e7f0ff;
       color: var(--azul);
       font-size: 0.77rem;
       font-weight: bold;
@@ -244,7 +244,7 @@
       padding: 76px 0;
       overflow: hidden;
       color: white;
-      background-color: #1b325f;
+      background-color: #020024;
     }
 
     .equipe-topo {
@@ -260,7 +260,7 @@
     .equipe-topo p {
       max-width: 680px;
       margin-top: 16px;
-      color: #e9f2f9;
+      color: #d6d9df;
     }
 
     .equipe-grade {
@@ -279,29 +279,27 @@
     }
 
     .membro-equipe:nth-child(1) {
-      background-color: #3a89c9;
+      background-color: #162b68;
     }
 
     .membro-equipe:nth-child(2) {
-      color: #1b325f;
-      background-color: #9cc4e4;
+      background-color: #0b577e;
     }
 
     .membro-equipe:nth-child(3) {
-      color: #1b325f;
-      background-color: #f26c4f;
+      background-color: #008f9c;
     }
 
     .foto-equipe {
       width: 190px;
       height: 190px;
       margin: 0 auto 22px;
-      border: 10px solid #1b325f;
+      border: 10px solid #020024;
       border-radius: 50%;
       display: grid;
       place-items: center;
       color: white;
-      background: #1b325f;
+      background: #20242b;
       font-size: 2.8rem;
       font-weight: bold;
       letter-spacing: 0.04em;
@@ -331,7 +329,7 @@
       border-radius: 14px;
       display: grid;
       place-items: center;
-      background-color: #9cc4e4;
+      background-color: #edf4ff;
       color: var(--azul);
       font-weight: bold;
     }
@@ -349,7 +347,7 @@
       padding: 22px;
       border: 1px solid var(--borda);
       border-radius: 18px;
-      background-color: #e9f2f9;
+      background-color: white;
     }
 
     .etapa::before {
@@ -362,7 +360,7 @@
       border-radius: 16px;
       color: white;
       font-weight: bold;
-      background: #3a89c9;
+      background: #00a7b5;
     }
 
     .fala {
@@ -381,7 +379,7 @@
       border: 1px solid var(--borda);
       border-radius: 18px;
       text-align: center;
-      background-color: #e9f2f9;
+      background-color: white;
     }
 
     .bloco-arquitetura strong {
@@ -404,7 +402,7 @@
       width: 100%;
       min-width: 760px;
       border-collapse: collapse;
-      background-color: #e9f2f9;
+      background-color: white;
     }
 
     th,
@@ -415,7 +413,7 @@
     }
 
     th {
-      background-color: #9cc4e4;
+      background-color: #edf4ff;
       color: var(--azul-escuro);
     }
 
@@ -428,8 +426,8 @@
       padding: 36px;
       border-radius: 26px;
       color: white;
-      background: #1b325f;
-      background: linear-gradient(90deg, #1b325f 0%, #3a89c9 55%, #9cc4e4 100%);
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 48, 121, 1) 35%, rgba(0, 255, 229, 1) 100%);
     }
 
     .compromissos {
@@ -442,7 +440,7 @@
     .compromisso::before {
       content: "✓";
       margin-right: 8px;
-      color: #f26c4f;
+      color: #63e6ef;
       font-weight: bold;
     }
 
@@ -458,8 +456,8 @@
     .rodape {
       margin-top: 0;
       padding: 42px 0;
-      background: #1b325f;
-      background: linear-gradient(90deg, #1b325f 0%, #3a89c9 55%, #9cc4e4 100%);
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 48, 121, 1) 35%, rgba(0, 255, 229, 1) 100%);
       color: white;
     }
 
@@ -475,7 +473,7 @@
       padding: 0 18px;
       border: none;
       border-radius: 12px;
-      background-color: #e9f2f9;
+      background-color: white;
       color: var(--azul-escuro);
       font-weight: bold;
       cursor: pointer;
