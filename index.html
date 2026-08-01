@@ -317,6 +317,12 @@
       letter-spacing: 0.04em;
     }
 
+    .foto-equipe-imagem {
+      display: block;
+      object-fit: cover;
+      object-position: center 28%;
+    }
+
     .membro-equipe h3 {
       font-size: 1.35rem;
       text-transform: uppercase;
@@ -1186,7 +1192,11 @@
 
         <div class="equipe-grade">
           <article class="membro-equipe">
-            <div class="foto-equipe" aria-label="Espaço para foto de Andressa Ferreira">AF</div>
+            <img
+              class="foto-equipe foto-equipe-imagem"
+              src="fotoandressa.jpeg"
+              alt="Andressa Ferreira"
+            >
             <h3>Andressa Ferreira</h3>
             <p class="funcao-equipe">Função a definir</p>
             <p class="descricao-equipe">
