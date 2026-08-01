@@ -315,12 +315,18 @@
       font-size: 2.8rem;
       font-weight: bold;
       letter-spacing: 0.04em;
+      overflow: hidden;
     }
 
     .foto-equipe-imagem {
       display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 0;
       object-fit: cover;
-      object-position: center 28%;
+      object-position: center 30%;
+      transform: scale(1.15);
     }
 
     .membro-equipe h3 {
@@ -691,7 +697,7 @@
           </p>
         </div>
 
-        <div class="grade-3">
+        <div class="grade-2">
 
           <article class="cartao">
             <div class="icone">V</div>
@@ -717,6 +723,16 @@
             <p>
               Associa imagens, transcrições, itens do checklist,
               confiança da IA e confirmações humanas.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">M</div>
+            <h3>Mapa de vistorias</h3>
+            <p>
+              O aplicativo apresenta um mapa com todas as vistorias,
+              identificadas por cores para diferenciar as que serão
+              realizadas, as finalizadas e as que ainda não foram concluídas.
             </p>
           </article>
 
@@ -1192,11 +1208,13 @@
 
         <div class="equipe-grade">
           <article class="membro-equipe">
-            <img
-              class="foto-equipe foto-equipe-imagem"
-              src="fotoandressa.jpeg"
-              alt="Andressa Ferreira"
-            >
+            <div class="foto-equipe">
+              <img
+                class="foto-equipe-imagem"
+                src="fotoandressa.jpeg"
+                alt="Andressa Ferreira"
+              >
+            </div>
             <h3>Andressa Ferreira</h3>
             <p class="funcao-equipe">Função a definir</p>
             <p class="descricao-equipe">
