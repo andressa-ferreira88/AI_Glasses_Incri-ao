@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Nome do produto  — agente multimodal de IA para auditorias e vistorias mãos-livres com AI Glasses."
+  >
+
+  <title>Nome do produto | AI Glasses Brasil 2026</title>
+
+  <style>
+    :root {
+      --fundo: #f5f7fb;
+      --superficie: #ffffff;
+      --texto: #152033;
+      --texto-suave: #5f6b7a;
+      --azul: #1769e0;
+      --azul-escuro: #0b3f91;
+      --ciano: #00a7b5;
+      --verde: #14866d;
+      --borda: #dfe5ee;
+      --sombra: 0 18px 45px rgba(20, 39, 74, 0.10);
+      --raio: 22px;
+      --largura: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--fundo);
+      color: var(--texto);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--largura));
+      margin: 0 auto;
+    }
+
+    .barra-superior {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--borda);
+    }
+
+    .navegacao {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .marca {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--texto-suave);
+      font-size: 0.92rem;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      color: var(--azul);
+    }
+
+    .hero {
+      padding: 92px 0 76px;
+      color: white;
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 48, 121, 1) 35%, rgba(0, 255, 229, 1) 100%);
+    }
+
+    .hero-conteudo {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .etiquetas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .etiqueta {
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      background-color: rgba(255, 255, 255, 0.10);
+      font-size: 0.82rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      max-width: 820px;
+      font-size: clamp(2.8rem, 7vw, 5.8rem);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .subtitulo {
+      max-width: 760px;
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .frase-impacto {
+      margin-top: 30px;
+      padding-left: 18px;
+      border-left: 4px solid #63e6ef;
+      font-size: 1.16rem;
+      font-weight: bold;
+    }
+
+    .cartao-resumo {
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 28px;
+      background-color: rgba(255, 255, 255, 0.10);
+    }
+
+    .dado-resumo {
+      padding: 14px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .dado-resumo span {
+      display: block;
+      color: rgba(255, 255, 255, 0.64);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+    }
+
+    .dado-resumo strong {
+      display: block;
+      margin-top: 4px;
+    }
+
+    section {
+      padding: 76px 0 0;
+    }
+
+    .cabecalho-secao {
+      max-width: 780px;
+      margin-bottom: 34px;
+    }
+
+    .numero-secao {
+      display: inline-block;
+      padding: 5px 12px;
+      margin-bottom: 12px;
+      border-radius: 999px;
+      background-color: #e7f0ff;
+      color: var(--azul);
+      font-size: 0.77rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 4vw, 3.1rem);
+      line-height: 1.1;
+    }
+
+    .descricao-secao {
+      margin-top: 14px;
+      color: var(--texto-suave);
+      font-size: 1.03rem;
+    }
+
+    .grade-2,
+    .grade-3,
+    .grade-4 {
+      display: grid;
+      gap: 22px;
+    }
+
+    .grade-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grade-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grade-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .beneficios-bateria {
+      margin-top: 22px;
+    }
+
+    .cartao {
+      padding: 28px;
+      border: 1px solid var(--borda);
+      border-radius: var(--raio);
+      background-color: var(--superficie);
+      box-shadow: var(--sombra);
+    }
+
+    .cartao h3 {
+      margin-bottom: 10px;
+    }
+
+    .cartao p {
+      color: var(--texto-suave);
+    }
+
+    .icone {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 18px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background-color: #edf4ff;
+      color: var(--azul);
+      font-weight: bold;
+    }
+
+    .fluxo {
+      display: grid;
+      gap: 14px;
+      counter-reset: etapa;
+    }
+
+    .etapa {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 18px;
+      padding: 22px;
+      border: 1px solid var(--borda);
+      border-radius: 18px;
+      background-color: white;
+    }
+
+    .etapa::before {
+      counter-increment: etapa;
+      content: counter(etapa);
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: white;
+      font-weight: bold;
+      background: #00a7b5;
+    }
+
+    .fala {
+      color: var(--azul-escuro);
+      font-weight: bold;
+    }
+
+    .arquitetura {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .bloco-arquitetura {
+      padding: 22px 16px;
+      border: 1px solid var(--borda);
+      border-radius: 18px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .bloco-arquitetura strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .bloco-arquitetura span {
+      color: var(--texto-suave);
+      font-size: 0.9rem;
+    }
+
+    .tabela-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--borda);
+      border-radius: var(--raio);
+    }
+
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th,
+    td {
+      padding: 18px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--borda);
+    }
+
+    th {
+      background-color: #edf4ff;
+      color: var(--azul-escuro);
+    }
+
+    .status {
+      color: var(--verde);
+      font-weight: bold;
+    }
+
+    .bloco-etica {
+      padding: 36px;
+      border-radius: 26px;
+      color: white;
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 48, 121, 1) 35%, rgba(0, 255, 229, 1) 100%);
+    }
+
+    .compromissos {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 24px;
+    }
+
+    .compromisso::before {
+      content: "✓";
+      margin-right: 8px;
+      color: #63e6ef;
+      font-weight: bold;
+    }
+
+    .citacao {
+      margin-top: 28px;
+      padding: 20px 22px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      background-color: rgba(255, 255, 255, 0.09);
+      font-weight: bold;
+    }
+
+    .rodape {
+      margin-top: 82px;
+      padding: 42px 0;
+      background: #020024;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 48, 121, 1) 35%, rgba(0, 255, 229, 1) 100%);
+      color: white;
+    }
+
+    .rodape-conteudo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .botao {
+      min-height: 46px;
+      padding: 0 18px;
+      border: none;
+      border-radius: 12px;
+      background-color: white;
+      color: var(--azul-escuro);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 960px) {
+      .hero-conteudo,
+      .grade-2,
+      .grade-3,
+      .grade-4,
+      .arquitetura {
+        grid-template-columns: 1fr;
+      }
+
+      .compromissos {
+        grid-template-columns: 1fr;
+      }
+
+      .menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="barra-superior">
+    <div class="container navegacao">
+
+      <a class="marca" href="#inicio">
+        <span>Nome do produto</span>
+      </a>
+
+      <nav class="menu">
+        <a href="#problema">Problema</a>
+        <a href="#solucao">Solução</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#bateria">Bateria</a>
+        <a href="#privacidade">Privacidade</a>
+        <a href="#prototipo">Protótipo</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="container hero-conteudo">
+
+      <div>
+        <div class="etiquetas">
+          <span class="etiqueta">
+            AI Glasses Brasil 2026
+          </span>
+
+          <span class="etiqueta">
+            Trilha: Produtividade
+          </span>
+
+          <span class="etiqueta">
+            IA multimodal
+          </span>
+        </div>
+
+        <h1>Nome do produto</h1>
+
+        <p class="subtitulo">
+          Agente multimodal de inteligência artificial para
+          auditorias, vistorias e inspeções técnicas realizadas
+          de forma totalmente mãos-livres.
+        </p>
+
+        <p class="frase-impacto">
+          Da observação ao relatório, sem tirar as mãos da atividade.
+        </p>
+      </div>
+
+      <aside class="cartao-resumo">
+        <h2>Resumo da inscrição</h2>
+
+        <div class="dado-resumo">
+          <span>Entrada principal</span>
+          <strong>Câmera e microfone dos óculos</strong>
+        </div>
+
+        <div class="dado-resumo">
+          <span>Saída principal</span>
+          <strong>Orientações e confirmações por áudio</strong>
+        </div>
+
+        <div class="dado-resumo">
+          <span>Aplicação inicial</span>
+          <strong>Vistorias técnicas e inspeção de ativos</strong>
+        </div>
+
+        <div class="dado-resumo">
+          <span>Público</span>
+          <strong>
+            Técnicos, auditores, fiscais e equipes de campo
+          </strong>
+        </div>
+
+        <div class="dado-resumo">
+          <span>Equipe</span>
+          <strong>Andressa Ferreira,Felipe Moraski, Jose leal Marques</strong>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <main>
+
+    <section id="problema">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">01</span>
+
+          <h2>O problema</h2>
+
+          <p class="descricao-secao">
+            A coleta de evidências em campo ainda depende de
+            processos fragmentados, manuais e sujeitos a falhas.
+          </p>
+        </div>
+
+        <div class="grade-4">
+
+          <article class="cartao">
+            <div class="icone">01</div>
+            <h3>Interrupções frequentes</h3>
+            <p>
+              O profissional precisa interromper a atividade para
+              utilizar o celular, a câmera ou documentos em papel.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">02</div>
+            <h3>Evidências desconectadas</h3>
+            <p>
+              Fotos, áudios, anotações e itens do checklist ficam
+              armazenados separadamente.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">03</div>
+            <h3>Relatórios incompletos</h3>
+            <p>
+              Informações podem ser esquecidas, duplicadas ou
+              registradas sem o contexto adequado.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">04</div>
+            <h3>Tempo administrativo</h3>
+            <p>
+              A equipe precisa reconstruir toda a vistoria depois
+              que o profissional deixa o local.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="solucao">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">02</span>
+
+          <h2>A solução</h2>
+
+          <p class="descricao-secao">
+            O Nome do produto transforma os AI Glasses em um
+            agente de evidências capaz de ver, ouvir, orientar,
+            registrar e estruturar a vistoria.
+          </p>
+        </div>
+
+        <div class="grade-3">
+
+          <article class="cartao">
+            <div class="icone">V</div>
+            <h3>Visão computacional e OCR</h3>
+            <p>
+              Identifica ativos, etiquetas, números de série,
+              QR codes, condições visuais e regiões relevantes.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">A</div>
+            <h3>Interação por voz</h3>
+            <p>
+              Interpreta comandos e observações do profissional,
+              conduzindo o checklist pelos alto-falantes.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">R</div>
+            <h3>Relatório automático</h3>
+            <p>
+              Associa imagens, transcrições, itens do checklist,
+              confiança da IA e confirmações humanas.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">03</span>
+
+          <h2>Experiência de uso</h2>
+
+          <p class="descricao-secao">
+            Uma interação natural, guiada por câmera, voz e
+            confirmação humana.
+          </p>
+        </div>
+
+        <div class="fluxo">
+
+          <article class="etapa">
+            <div>
+              <strong>Início da sessão</strong>
+
+              <p class="fala">
+                “Iniciar vistoria do ativo 245.”
+              </p>
+            </div>
+          </article>
+
+          <article class="etapa">
+            <div>
+              <strong>Identificação do ativo</strong>
+
+              <p>
+                A câmera reconhece a etiqueta, o número de série
+                ou o QR code.
+              </p>
+            </div>
+          </article>
+
+          <article class="etapa">
+            <div>
+              <strong>Checklist orientado por áudio</strong>
+
+              <p class="fala">
+                “Ativo 245 identificado. Verifique o estado externo.”
+              </p>
+            </div>
+          </article>
+
+          <article class="etapa">
+            <div>
+              <strong>Registro da observação</strong>
+
+              <p class="fala">
+                “Existe uma rachadura na lateral direita.”
+              </p>
+            </div>
+          </article>
+
+          <article class="etapa">
+            <div>
+              <strong>Análise com explicabilidade</strong>
+
+              <p class="fala">
+                “Registrei possível rachadura. Confiança de 87%.
+                Deseja confirmar como não conformidade?”
+              </p>
+            </div>
+          </article>
+
+          <article class="etapa">
+            <div>
+              <strong>Conclusão da vistoria</strong>
+
+              <p>
+                O profissional confirma por voz, recebe um resumo
+                falado e o relatório é gerado automaticamente.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">04</span>
+
+          <h2>Diferenciais de inovação</h2>
+
+          <p class="descricao-secao">
+            A solução garante qualidade, rastreabilidade e
+            segurança durante a coleta de evidências.
+          </p>
+        </div>
+
+        <div class="grade-2">
+
+          <article class="cartao">
+            <div class="icone">1</div>
+
+            <h3>Identificação de evidências faltantes</h3>
+
+            <p>
+              O agente verifica o que ainda precisa ser registrado
+              antes de concluir cada item.
+            </p>
+
+            <p class="fala">
+              “Ainda não foi possível visualizar a etiqueta de
+              validade. Aproxime-se do rótulo.”
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">2</div>
+
+            <h3>Decisão humana preservada</h3>
+
+            <p>
+              A IA apresenta sua interpretação e nível de confiança,
+              mas exige confirmação do profissional.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">3</div>
+
+            <h3>Pacote de evidências rastreável</h3>
+
+            <p>
+              Cada registro pode conter imagem, horário, sessão,
+              OCR, observação, sugestão da IA, confirmação humana
+              e hash digital.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <div class="icone">4</div>
+
+            <h3>Checklist adaptativo</h3>
+
+            <p>
+              O agente pergunta apenas o que ainda não conseguiu
+              verificar por imagem ou por voz.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="arquitetura">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">05</span>
+
+          <h2>Arquitetura proposta</h2>
+
+          <p class="descricao-secao">
+            Fluxo orientado a eventos, integrado aos sensores dos
+            óculos e ao aplicativo móvel.
+          </p>
+        </div>
+
+        <div class="arquitetura">
+
+          <div class="bloco-arquitetura">
+            <strong>AI Glasses</strong>
+            <span>Câmera, microfone e alto-falantes</span>
+          </div>
+
+          <div class="bloco-arquitetura">
+            <strong>Device Access Toolkit</strong>
+            <span>Integração com os recursos dos óculos</span>
+          </div>
+
+          <div class="bloco-arquitetura">
+            <strong>Aplicativo</strong>
+            <span>Sessão, captura, áudio e cache local</span>
+          </div>
+
+          <div class="bloco-arquitetura">
+            <strong>Agente multimodal</strong>
+            <span>OCR, visão, voz, RAG e confiança</span>
+          </div>
+
+          <div class="bloco-arquitetura">
+            <strong>Nome do produto</strong>
+            <span>Relatório estruturado e evidências</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="bateria">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">06</span>
+
+          <h2>Estratégia de economia de bateria</h2>
+
+          <p class="descricao-secao">
+            O sistema evita transmissão contínua e realiza processamento
+            somente quando existe uma ação relevante.
+          </p>
+        </div>
+
+        <div class="grade-3">
+          <article class="cartao">
+            <span class="numero-secao">1</span>
+            <h3>Captura sob demanda</h3>
+            <p>
+              Uma imagem é capturada apenas após comando do profissional
+              ou solicitação do agente.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <span class="numero-secao">2</span>
+            <h3>Análise local inicial</h3>
+            <p>
+              QR code, OCR simples e qualidade da imagem podem ser
+              avaliados diretamente no celular.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <span class="numero-secao">3</span>
+            <h3>Envio seletivo</h3>
+            <p>
+              Apenas recortes relevantes seguem para a nuvem quando uma
+              análise mais complexa for necessária.
+            </p>
+          </article>
+        </div>
+
+        <div class="grade-3 beneficios-bateria">
+          <article class="cartao">
+            <h3>Sem vídeo contínuo</h3>
+            <p>Menor consumo de energia e menor exposição de dados.</p>
+          </article>
+
+          <article class="cartao">
+            <h3>Processamento por eventos</h3>
+            <p>
+              A IA é acionada apenas quando existe uma evidência a analisar.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <h3>Sincronização em lote</h3>
+            <p>
+              Relatórios podem ser enviados em momentos de melhor conectividade.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="checkpoints">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">07</span>
+
+          <h2>Atendimento aos requisitos</h2>
+        </div>
+
+        <div class="tabela-wrapper">
+          <table>
+
+            <thead>
+              <tr>
+                <th>Checkpoint</th>
+                <th>Implementação no Nome do produto</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Inteligência Artificial</strong>
+                </td>
+
+                <td>
+                  Visão computacional, OCR, interpretação de voz,
+                  checklist com RAG e estimativa de confiança.
+                </td>
+
+                <td>
+                  <span class="status">✓ Atendido</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Câmera ou microfone</strong>
+                </td>
+
+                <td>
+                  Ambos são utilizados para identificação, análise
+                  visual, comandos e observações.
+                </td>
+
+                <td>
+                  <span class="status">✓ Atendido</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Output por áudio</strong>
+                </td>
+
+                <td>
+                  Perguntas, orientações, alertas e resumos são
+                  apresentados pelos alto-falantes.
+                </td>
+
+                <td>
+                  <span class="status">✓ Atendido</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Privacidade e dados</strong>
+                </td>
+
+                <td>
+                  Captura sob demanda, anonimização, criptografia
+                  e confirmação humana.
+                </td>
+
+                <td>
+                  <span class="status">✓ Atendido</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Eficiência de bateria</strong>
+                </td>
+
+                <td>
+                  Sem vídeo contínuo, processamento por eventos
+                  e sincronização em lote.
+                </td>
+
+                <td>
+                  <span class="status">✓ Atendido</span>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacidade">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">08</span>
+
+          <h2>Privacidade, ética e responsabilidade</h2>
+
+          <p class="descricao-secao">
+            A solução limita a coleta ao necessário e mantém a
+            decisão técnica sob responsabilidade humana.
+          </p>
+        </div>
+
+        <div class="bloco-etica">
+
+          <h3>Compromissos do projeto</h3>
+
+          <div class="compromissos">
+            <div class="compromisso">
+              Não utiliza reconhecimento facial.
+            </div>
+
+            <div class="compromisso">
+              Não mantém gravação contínua.
+            </div>
+
+            <div class="compromisso">
+              Avisa quando a captura começa e termina.
+            </div>
+
+            <div class="compromisso">
+              Captura somente a evidência necessária.
+            </div>
+
+            <div class="compromisso">
+              Desfoca rostos e dados pessoais.
+            </div>
+
+            <div class="compromisso">
+              Prioriza processamento local.
+            </div>
+
+            <div class="compromisso">
+              Transmite apenas recortes relevantes.
+            </div>
+
+            <div class="compromisso">
+              Criptografa os dados locais e em trânsito.
+            </div>
+
+            <div class="compromisso">
+              Define prazo de retenção.
+            </div>
+
+            <div class="compromisso">
+              Solicita confirmação humana.
+            </div>
+          </div>
+
+          <div class="citacao">
+            “A solução atua como apoio à coleta e organização de
+            evidências, não como certificadora autônoma de
+            conformidade.”
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="prototipo">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="numero-secao">09</span>
+
+          <h2>Protótipo</h2>
+
+          <p class="descricao-secao">
+            Vídeo a ser anexado.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <button
+        class="botao"
+        type="button"
+        onclick="window.print()"
+      >
+        Imprimir ou salvar em PDF
+      </button>
+
+    </div>
+  </footer>
+
+</body>
+</html>
