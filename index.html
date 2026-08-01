@@ -239,6 +239,98 @@
       color: var(--texto-suave);
     }
 
+    .secao-equipe {
+      margin-top: 76px;
+      padding: 76px 0;
+      overflow: hidden;
+      color: white;
+      background-color: #050505;
+    }
+
+    .equipe-topo {
+      max-width: 760px;
+      margin-bottom: 44px;
+    }
+
+    .equipe-topo .numero-secao {
+      color: #111111;
+      background-color: #ffc52f;
+    }
+
+    .equipe-topo h2 {
+      max-width: 620px;
+      text-transform: uppercase;
+    }
+
+    .equipe-topo h2 span {
+      color: #ffc52f;
+    }
+
+    .equipe-topo p {
+      max-width: 680px;
+      margin-top: 16px;
+      color: #d6d9df;
+    }
+
+    .equipe-grade {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      align-items: end;
+    }
+
+    .membro-equipe {
+      min-height: 390px;
+      padding: 34px 26px 28px;
+      border-radius: 150px 150px 22px 22px;
+      color: #111111;
+      text-align: center;
+    }
+
+    .membro-equipe:nth-child(1) {
+      background-color: #f3a7c6;
+    }
+
+    .membro-equipe:nth-child(2) {
+      background-color: #cbd9da;
+    }
+
+    .membro-equipe:nth-child(3) {
+      background-color: #ffc52f;
+    }
+
+    .foto-equipe {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 22px;
+      border: 10px solid #050505;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: #20242b;
+      font-size: 2.8rem;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+    }
+
+    .membro-equipe h3 {
+      font-size: 1.35rem;
+      text-transform: uppercase;
+    }
+
+    .funcao-equipe {
+      margin: 2px 0 12px;
+      font-size: 1.05rem;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .descricao-equipe {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
     .icone {
       width: 46px;
       height: 46px;
@@ -401,8 +493,15 @@
       .grade-2,
       .grade-3,
       .grade-4,
+      .equipe-grade,
       .arquitetura {
         grid-template-columns: 1fr;
+      }
+
+      .membro-equipe {
+        max-width: 480px;
+        width: 100%;
+        margin: 0 auto;
       }
 
       .compromissos {
@@ -426,6 +525,7 @@
       </a>
 
       <nav class="menu">
+        <a href="#equipe">Equipe</a>
         <a href="#problema">Problema</a>
         <a href="#solucao">Solução</a>
         <a href="#diferenciais">Diferenciais</a>
@@ -503,6 +603,56 @@
   </section>
 
   <main>
+
+    <section class="secao-equipe" id="equipe">
+      <div class="container">
+
+        <div class="equipe-topo">
+          <span class="numero-secao">NOSSO TIME</span>
+
+          <h2>Nossa <span>equipe criativa</span></h2>
+
+          <p>
+            Um time multidisciplinar unido para transformar tecnologia,
+            inteligência artificial e visão computacional em soluções
+            práticas para profissionais em campo.
+          </p>
+        </div>
+
+        <div class="equipe-grade">
+          <article class="membro-equipe">
+            <div class="foto-equipe" aria-label="Espaço para foto de Andressa Ferreira">AF</div>
+            <h3>Andressa Ferreira</h3>
+            <p class="funcao-equipe">Função a definir</p>
+            <p class="descricao-equipe">
+              Adicione aqui uma breve apresentação, responsabilidades e
+              principais contribuições para o projeto.
+            </p>
+          </article>
+
+          <article class="membro-equipe">
+            <div class="foto-equipe" aria-label="Espaço para foto de Felipe Moraski">FM</div>
+            <h3>Felipe Moraski</h3>
+            <p class="funcao-equipe">Função a definir</p>
+            <p class="descricao-equipe">
+              Adicione aqui uma breve apresentação, responsabilidades e
+              principais contribuições para o projeto.
+            </p>
+          </article>
+
+          <article class="membro-equipe">
+            <div class="foto-equipe" aria-label="Espaço para foto de Jose Leal Marques">JM</div>
+            <h3>Jose Leal Marques</h3>
+            <p class="funcao-equipe">Função a definir</p>
+            <p class="descricao-equipe">
+              Adicione aqui uma breve apresentação, responsabilidades e
+              principais contribuições para o projeto.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
 
     <section id="problema">
       <div class="container">
